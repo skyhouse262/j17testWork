@@ -1,0 +1,20 @@
+package com.test.start1;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+
+@SpringBootApplication
+public class Start1Application extends SpringBootServletInitializer{
+	
+	@Override
+	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+		return builder.sources(Start1Application.class);
+	}
+
+	public static void main(String[] args) {
+		SpringApplication.run(Start1Application.class, args);
+	}
+
+}
